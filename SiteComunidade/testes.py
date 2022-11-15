@@ -23,19 +23,19 @@ from comunidadeimpressionadora import database
 
 with app.app_context():
    meus_usuarios = Usuario.query.all()
-   print(meus_usuarios)
 
-   primeiro_usuario = Usuario.query.first()
-   print(primeiro_usuario)
+#   primeiro_usuario = Usuario.query.first()
+#   print(primeiro_usuario)
    # OU
 #   primeiro_usuario = meus_usuarios[0]
-#   print(primeiro_usuario)
+   segundo_usuario = meus_usuarios[1]
+   print(segundo_usuario)
 
    # pegando informações do usuário
 #   print(primeiro_usuario.id)
-   print(primeiro_usuario.email)
-   print(primeiro_usuario.senha)
-   print(primeiro_usuario.username)
+#   print(primeiro_usuario.email)
+   print(segundo_usuario.senha)
+#   print(primeiro_usuario.username)
 #   print(primeiro_usuario.posts) # Se não tiver post ainda, uma lista vazia será exibida
 
    # consultando um usuário baseado em uma condição
