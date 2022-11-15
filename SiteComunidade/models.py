@@ -16,4 +16,4 @@ class Post(database.Model):
     titulo = database.Column(database.String, nullable=False)
     corpo = database.Column(database.Text, nullable=False)
     data_criacao = database.Column(database.DateTime, nullable=False, default=datetime.utcnow)
-    id_usuario = database.Column(database.Integer, database.Foreignkey('usuario.id'), nullable=False)
+    id_usuario = database.Column(database.Integer, database.ForeignKey('usuario.id'), nullable=False)
