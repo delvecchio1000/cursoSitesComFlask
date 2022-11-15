@@ -2,8 +2,8 @@
 # USADAS PARA CRIAÇÃO E UTILIZAÇÃO DO BANCO DE DADOS. ESTE ARQUIVO PODE SER DELETADO.
 # PREFIRO MANTER COMO FONTE DE CONSULTA.
 
-from main import app, database
-from models import Usuario, Post
+from main import app
+from comunidadeimpressionadora.models import Usuario, Post
 
 # Observação: Toda vez que modificarmos ou consultarmos o banco de dados
 # será preciso inserir os comandos dentro de um 'with app.app_context():'
